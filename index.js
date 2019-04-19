@@ -29,12 +29,10 @@ class Route {
 
      blocksTravelled() {
 
-         let totalVertical = Math.abs(this.endingLocation.vertical  - this.beginningLocation.vertical);
-
-         let totalHorizontal = Math.abs(eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation.horizontal));
-
-         return totalVertical + totalHorizontal;
-    }
+          let horizontal = Math.abs(eastWest.indexOf(this.end.horizontal) - eastWest.indexOf(this.start.horizontal));
+    let  vertical = Math.abs(this.end.vertical - this.start.vertical)
+    return horizontal + vertical;
+  }
 
      estimatedTime(isDuringPeakHours) {
         if (!!isDuringPeakHours) {
