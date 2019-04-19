@@ -17,6 +17,6 @@ class Driver {
         return this.startDate;
     }
     yearsExperienceFromBeginningOf(year) {
-        return year - this.startDate.getFullYear();
+        return new Date(year).getFullYear() - this.startDate.getFullYear();
     }
 }
