@@ -20,3 +20,5 @@ class Driver {
         return new Date(year).getFullYear() - this.startDate.getFullYear();
     }
 }
+
+d = new Date(new Date().getFullYear(), 0, 1);
