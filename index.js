@@ -28,17 +28,16 @@ class Route {
     }
 
      blocksTravelled() {
-
       let horizontal = Math.abs(eastWest.indexOf(this.end.horizontal) - eastWest.indexOf(this.start.horizontal));
       let  vertical = Math.abs(this.end.vertical - this.start.vertical)
-    return horizontal + vertical;
+      return horizontal + vertical;
   }
 
-    estimatedTime(isDuringPeakHours) {
-        if (!!isDuringPeakHours) {
-            return this.blocksTravelled() / 2;
-        } else {
-            return this.blocksTravelled() / 3;
-        }
+    estimatedTime(peakTime) {
+    if (peakTime){
+      return this.blocksTravelled()/2
+    } else {
+      return this.blocksTravelled()/3
     }
+  }
 } 
