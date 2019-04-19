@@ -13,12 +13,10 @@ class Driver {
         this.name = name;
         this.startDate = new Date(startDate)
     }
-
-     startDate() {
+    startDate() {
         return this.startDate;
     }
-
-     yearsExperienceFromBeginningOf(year) {
+    yearsExperienceFromBeginningOf(year) {
         return new Date(year).getFullYear() - this.startDate.getFullYear() + 1;
     }
 }
