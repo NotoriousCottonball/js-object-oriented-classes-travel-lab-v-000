@@ -23,8 +23,8 @@ class Driver {
 
 class Route {
     constructor(beginningLocation, endingLocation) {
-      this.start = start; 
-      this.end = end;
+      this.start = beginningLocation; 
+      this.end = endingLocation;
     }
 
      blocksTravelled() {
