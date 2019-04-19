@@ -34,7 +34,7 @@ class Route {
     return horizontal + vertical;
   }
 
-     estimatedTime(isDuringPeakHours) {
+    estimatedTime(isDuringPeakHours) {
         if (!!isDuringPeakHours) {
             return this.blocksTravelled() / 2;
         } else {
